@@ -1,0 +1,21 @@
+KopDes FMCG Sales & Distribution Practice Dataset
+
+Business model: B2B FMCG distribution (sell-in to retail outlets)
+Period: 2025-01-01 to 2026-12-31
+Currency: IDR
+
+FILES
+- KopDes_MasterData.xlsx
+  Sheets: README, DimProduct, DimDistributor, DimSalesperson, DimOutlet, FactTarget, FactInventory
+- FactSales_2025_Q1.csv ... FactSales_2026_Q4.csv
+  Total sales lines: 130,995
+  Grain: one row = one SKU line on one invoice to one outlet
+
+FIRST POWER BI EXERCISE
+1. Open Power BI Desktop.
+2. Get Data > Excel Workbook > KopDes_MasterData.xlsx.
+3. Choose Transform Data, not Load.
+4. For sales, Get Data > Folder and select the folder containing the 8 FactSales CSV files.
+5. Combine/Transform the quarterly CSVs into one query named FactSales.
+6. Profile column data types and keys before loading.
+7. Create DimDate later in Power BI, not in the raw source.
